@@ -1,0 +1,118 @@
+
+/* Media Query for Tablet */
+
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    #hero h1 {
+        font-size: 7rem;
+    }
+
+    #services .service-bottom{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin:2.5%;
+    }
+    #projects .projects {
+        display: flex;
+    }
+    #projects .all-projects{
+        margin-top: 30px;
+        margin: 0 16px;
+    }
+    #projects .project-item{
+        margin: 0 !important;
+        border-radius: 0 !important ;
+        height: 300px;
+        flex-direction: row !important;
+        width: 100% !important;
+    } 
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse !important;
+    }
+    
+    #projects .all-projects .project-info {
+        height: 100%;
+    }
+    #projects .all-projects .project-img {
+        flex-basis: 50%;
+    } 
+    
+    /*About*/
+    #about .about {
+        flex-direction: row !important;
+    }
+    #about .col-left{
+        width: 600px !important;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #DC143C;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1 {
+        text-align: left;
+    }
+
+    /*Contact*/
+
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items:center;
+        justify-content:center;
+        min-width: 20vh;
+    }
+    #contact .contact-items {
+        width: 100% ;
+        display: flex;
+        flex-direction:row !important;
+    }
+    #contact .contact-item {
+        flex-basis: 33.33333%;
+    }
+    #contact .contact-item:last-child{
+        height: 198px;
+    }
+    #contact .contact-item h2 {
+        word-break: break-all;
+    }
+
+}
+
+/*Media Query for Desktop*/
+
+@media only screen and (min-width: 1200px) {
+    #header .header .hamburger {
+        display: none;
+    }
+    #header .nav-list ul {
+        position: absolute;
+        display: block;
+        height: auto;
+        width: fit-content;
+    }
+    #services .service-bottom .service-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+
