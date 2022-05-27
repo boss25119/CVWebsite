@@ -105,10 +105,14 @@
         display: none;
     }
     #header .nav-list ul {
-        position: absolute;
-        display: block;
-        height: auto;
+        background-color: inherit !important ;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
         width: fit-content;
+        position: unset !important;
     }
     #services .service-bottom .service-item {
         flex-basis: 22%;
