@@ -9,6 +9,12 @@ html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+t-0 {
+    top: 0;
+}
+t-7{
+    top: -70px;
+}
 a { 
     text-decoration: none;
 }
