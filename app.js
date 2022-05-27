@@ -7,3 +7,14 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
     mobileMenu.classList.toggle('active')
 })
+
+window.addEventListener("scroll", scroll)
+
+function scroll() {
+    if(document.documentElement.scrollTop > 100){
+        document.getElementById("header").style.top = "-70px"
+    }else{
+        document.getElementById("header").style.top = "0"
+    }
+}
+
